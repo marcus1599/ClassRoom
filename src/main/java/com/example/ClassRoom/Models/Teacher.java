@@ -31,7 +31,7 @@ public class Teacher implements Serializable {
     private String name;
 
     @Column
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "dica")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "teacher")
     private List<Discipline> discipline;
 
 }

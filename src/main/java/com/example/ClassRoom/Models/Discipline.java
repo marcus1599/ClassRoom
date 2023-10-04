@@ -31,7 +31,6 @@ public class Discipline implements Serializable {
     @Column
     private Student students;
 
-    @Column
     @ManyToOne()
     @JoinColumn(name = "id_teacher")
     private Teacher teacher;
